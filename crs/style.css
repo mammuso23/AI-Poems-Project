@@ -70,3 +70,7 @@ a {
   border-radius: 50px;
   padding: 10px 20px;
 }
+
+.poem strong {
+  color: blue;
+}
