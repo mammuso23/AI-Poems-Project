@@ -8,39 +8,41 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="crs/style.css" />
   </head>
- <body>
+  <body>
     <div class="container">
-        <header>
-            <h1>AI Poems Generator</h1>
-        </header>
-        <main>
-            <form id="poetic-ai">
-                <input
-                class="instruction-input"
-                type="text"
-                id="user-instructions"
-                placeholder="Enter your poem topic..."
-                autofocus
-                required
-                />
-                <input type="submit" class="submit-button" />
-            </form>
-            <div class="poem" id="poem"> </br>
-                 </br>
-                
-            </div>
-        </main>
-            <footer>
-                This project was coded by<a target="_blank"> Mammuso Mokoena</a> and open-sourced on
-                <a
-                href="https://github.com/mammuso23/AI-Poems-Project.git"
-                target="_blank"
-                >Github</a>
-                and is hosted on
-                <a href="https://poetic-ai.netlify.app/" target="_blank">Netlify</a>.
-            </footer>
+      <header>
+        <h1>AI Poems Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="poetic-ai">
+            <input
+              class="instruction-input"
+              type="text"
+              id="user-instructions"
+              placeholder="Enter your poem topic..."
+              autofocus
+              required
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flowers, Mona Lisa, or Italy</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        This project was coded by<a target="_blank"> Mammuso Mokoena</a> and
+        open-sourced on
+        <a
+          href="https://github.com/mammuso23/AI-Poems-Project.git"
+          target="_blank"
+          >Github</a
+        >
+        and is hosted on
+        <a href="https://poetic-ai.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
     </div>
 
-  <script src="crs/index.js"></script>
- </body>
+    <script src="crs/index.js"></script>
+  </body>
 </html>
